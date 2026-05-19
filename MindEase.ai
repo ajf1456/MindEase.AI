@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MindEase AI – Mental Wellbeing for Young Professionals in Japan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --primary: #4b6fd6;
+      --accent: #f2b8c6;
+      --text: #1f2933;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      padding: 1.5rem 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header .logo {
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      color: var(--primary);
+    }
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.95rem;
+    }
+    nav a:hover { color: var(--primary); }
+
+    .hero {
+      padding: 4rem 8% 3rem;
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 3rem;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: clamp(2.2rem, 3vw, 2.8rem);
+      margin-bottom: 1rem;
+    }
+    .hero p {
+      max-width: 32rem;
+      margin-bottom: 1.5rem;
+    }
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .btn-primary, .btn-ghost {
+      padding: 0.8rem 1.4rem;
+      border-radius: 999px;
+      border: 1px solid transparent;
+      font-size: 0.95rem;
+      cursor: pointer;
+      text-decoration: none;
+      display: inline-block;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #fff;
+    }
+    .btn-primary:hover { opacity: 0.9; }
+    .btn-ghost {
+      background: transparent;
+      border-color: var(--primary);
+      color: var(--primary);
+    }
+    .hero-card {
+      background: #fff;
+      border-radius: 1.5rem;
+      padding: 1.8rem;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+    }
+    .hero-card h2 {
+      font-size: 1.1rem;
+      margin-bottom: 0.8rem;
+    }
+    .hero-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.7rem;
+      border-radius: 999px;
+      background: #e3ebff;
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+    }
+
+    section {
+      padding: 3rem 8%;
+    }
+    section h2 {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 1.2rem;
+      padding: 1.5rem;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+    }
+    .card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 0.5rem;
+    }
+    .pill {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.2rem 0.6rem;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: var(--primary);
+      margin-bottom: 0.6rem;
+    }
+
+    .pricing {
+      text-align: center;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    .price {
+      font-size: 1.8rem;
+      font-weight: 700;
+      margin: 0.5rem 0;
+    }
+    footer {
+      padding: 2rem 8%;
+      font-size: 0.85rem;
+      color: #6b7280;
+      border-top: 1px solid #e5e7eb;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    footer a {
+      color: #6b7280;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+    footer a:hover { color: var(--primary); }
+
+    @media (max-width: 768px) {
+      header { padding: 1.2rem 6%; }
+      .hero { grid-template-columns: 1fr; padding: 3rem 6% 2.5rem; }
+      section { padding: 2.5rem 6%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">MindEase AI</div>
+  <nav>
+    <a href="#how">How it works</a>
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#employers">For employers</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div>
+      <h1>Mental wellbeing support for young professionals in Japan.</h1>
+      <p>MindEase AI offers private, personalised guidance for stress, burnout, and everyday emotional challenges, designed around Japanese working life.</p>
+      <div class="hero-buttons">
+        <a href="#pricing" class="btn-primary">Get started</a>
+        <a href="#how" class="btn-ghost">See how it works</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <span class="hero-tag">AI‑powered check‑ins</span>
+      <h2>“How are you feeling after today’s work?”</h2>
+      <p>MindEase AI analyses your daily check‑ins and suggests short, culturally sensitive micro‑actions to help you unwind, reset, and protect your wellbeing over time.</p>
+    </div>
+  </section>
+
+  <section id="how">
+    <h2>How MindEase AI works</h2>
+    <div class="two-col">
+      <div class="card">
+        <span class="pill">Step 1</span>
+        <h3>Daily emotional check‑ins</h3>
+        <p>Short, simple reflections you can complete in under a minute, designed to fit into busy workdays without pressure.</p>
+      </div>
+      <div class="card">
+        <span class="pill">Step 2</span>
+        <h3>AI‑driven insights</h3>
+        <p>The AI recognises patterns in mood, stress, and energy, highlighting when you may be at risk of burnout or emotional overload.</p>
+      </div>
+      <div class="card">
+        <span class="pill">Step 3</span>
+        <h3>Personalised micro‑support</h3>
+        <p>MindEase suggests small, realistic actions and reflections that respect Japanese work culture and your personal boundaries.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="features">
+    <h2>Designed for young professionals in Japan</h2>
+    <div class="two-col">
+      <div class="card">
+        <h3>Private and discreet</h3>
+        <p>Use MindEase AI anywhere, without needing to explain your situation to colleagues, managers, or even friends.</p>
+      </div>
+      <div class="card">
+        <h3>Culturally aware guidance</h3>
+        <p>Prompts and suggestions are shaped around Japanese working norms, long hours, and the realities of early‑career life.</p>
+      </div>
+      <div class="card">
+        <h3>Short, realistic actions</h3>
+        <p>Support is broken into small steps that can be done on a commute, during a break, or at home after work.</p>
+      </div>
+      <div class="card">
+        <h3>Progress you can feel</h3>
+        <p>Over time, you see patterns in your emotional wellbeing and learn what helps you recover and stay balanced.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="pricing" class="pricing">
+    <h2>Simple, transparent pricing</h2>
+    <p>Start for free, then choose if deeper support feels right for you.</p>
+    <div class="pricing-grid">
+      <div class="card">
+        <h3>Free</h3>
+        <p class="price">¥0</p>
+        <p>Basic daily check‑ins, mood tracking, and a limited set of wellbeing prompts.</p>
+      </div>
+      <div class="card">
+        <h3>MindEase Plus</h3>
+        <p class="price">¥600 / month</p>
+        <p>Full AI insights, personalised micro‑plans, extended history, and richer reflections tailored to your patterns.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="employers">
+    <h2>For employers in Japan</h2>
+    <div class="two-col">
+      <div>
+        <p>MindEase AI can be offered as part of your employee wellbeing programme, supporting young professionals who may not feel comfortable speaking openly about stress or burnout.</p>
+        <p>We provide anonymised, aggregated insights to help you understand overall wellbeing trends without exposing individual employees.</p>
+      </div>
+      <div class="card">
+        <h3>Workplace plans</h3>
+        <p>Annual licences for teams and organisations, with onboarding support and tailored communication materials.</p>
+        <p>Email: <strong>workplace@mindease‑ai.jp</strong></p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div>© MindEase AI, 2026</div>
+  <div>
+    <a href="#">Privacy</a>
+    <a href="#">Terms</a>
+    <a href="#">Contact</a>
+  </div>
+</footer>
+
+</body>
+</html>
