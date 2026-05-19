@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Website</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, sans-serif;
+      background: #f7f9fc;
+      color: #1f2937;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 1.2rem 8%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.4rem;
+      color: #2563eb;
+    }
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #1f2937;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #2563eb;
+    }
+
+    .hero {
+      padding: 5rem 8%;
+      text-align: center;
+      background: linear-gradient(135deg, #dbeafe, #eff6ff);
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #1e3a8a;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+      font-size: 1.1rem;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 0.8rem 1.6rem;
+      background: #2563eb;
+      color: #fff;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn:hover {
+      background: #1e40af;
+    }
+
+    section {
+      padding: 4rem 8%;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      font-size: 2rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #fff;
+      padding: 1.8rem;
+      border-radius: 1rem;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #2563eb;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 8%;
+      background: #1e293b;
+      color: #cbd5e1;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>My Website</h1>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Welcome to My Website</h2>
+  <p>This is a clean, modern, fully responsive website you can customise for any purpose — portfolio, business, or personal brand.</p>
+  <a href="#about" class="btn">Learn More</a>
+</section>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p style="max-width: 700px; margin: 0 auto; text-align: center;">
+    This section introduces who you are, what you do, or what your project is about.  
+    You can customise this text to match your goals, personality, or brand.
+  </p>
+</section>
+
+<section id="services">
+  <h2>What I Offer</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Service One</h3>
+      <p>Describe your first service or feature here. Keep it short and clear.</p>
+    </div>
+    <div class="card">
+      <h3>Service Two</h3>
+      <p>Explain another thing you provide or something your project does.</p>
+    </div>
+    <div class="card">
+      <h3>Service Three</h3>
+      <p>Add as many cards as you like — the layout will adjust automatically.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p style="text-align: center;">
+    Email me at: <strong>yourname@example.com</strong><br>
+    Or connect on social media.
+  </p>
+</section>
+
+<footer>
+  © 2026 My Website — Built with ❤️  
+  <br>
+  <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+</footer>
+
+</body>
+</html>
